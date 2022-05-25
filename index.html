@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Card pagamento cartão</title>
+  <link rel="shortcut icon" href="meu_favi/massucatti_tatu.ico"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="tips">
+<!--Payment card number: (4) VISA, (51 -> 55) MasterCard, (36-38-39) DinersClub, (34-37) American Express, (65) Discover, (5019) dankort-->
+</div>
+
+<div class="container">
+  <div class="col1">
+    <div class="card">
+      <div class="front">
+        <div class="type">
+          <img class="bankid"/>
+        </div>
+        <span class="chip"></span>
+        <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+        <div class="date"><span class="date_value">MM / AAAA</span></div>
+        <span class="fullname">NOME INTEIRO</span>
+      </div>
+      <div class="back">
+        <div class="magnetic"></div>
+        <div class="bar"></div>
+        <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+        <span class="chip"></span><span class="disclaimer">This card is property of Eduardo Massucatti corporation. <br> If found please return to Eduardo Massucatti corporation - github </span>
+      </div>
+    </div>
+  </div>
+  <div class="col2">
+    <label>Numero do cartão</label>
+    <input class="number" type="text" ng-model="ncard" maxlength="19" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+    <label>Nome no cartão</label>
+    <input class="inputname" type="text" placeholder=""/>
+    <label>Vencimento</label>
+    <input class="expire" type="text" placeholder="MM / AAAA"/>
+    <label>CVV</label>
+    <input class="ccv" type="text" placeholder="CVV" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+    <button class="buy"><i class="material-icons">lock</i> Pagar --.-- R$</button>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
